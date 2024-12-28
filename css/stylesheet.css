@@ -1,0 +1,173 @@
+/* Designed by BrookeAFK */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Root */
+  :root {
+    --white: #fff;
+    --off-white: #eee;
+    --bright: #ddd;
+    --medium: #bbb;
+    --medium-dark: #aaa;
+    --dark: #888;
+    --background: #0f0f0f;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--bright);
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .biography {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .profile {
+    width: 30%;
+    padding-right: 20px;
+    padding-left: 20px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .profile p {
+    font-size: 14px;
+    color: var(--medium);
+  }
+  
+  .profile a {
+    color: var(--off-white);
+    margin: 0 5px;
+  }
+  
+  .profile .links {
+    font-size: 18px;
+  }
+  
+  .profile .container-name {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .profile .name {
+    color: var(--white);
+    font-weight: 500;
+  }
+  
+  .profile .pronouns {
+    color: var(--medium);
+  }
+  
+  .content {
+    padding-left: 20px;
+  }
+  
+  .content .project {
+    background-color: #161616;
+    padding: 35px;
+    margin-bottom: 20px;
+  
+    border: 1px solid #303030;
+  }
+  
+  .content .project h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white);
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    color: var(--medium);
+    margin-left: 5px;
+  }
+  
+  .content .project p {
+    font-size: 14px;
+    color: var(--medium-dark);
+  }
+  
+  .project .description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .content .project a {
+    color: var(--medium-dark);
+  }
+  
+  .biography p + p {
+    margin-top: 10px;
+  }
+  
+  .spacer {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .flex-basic {
+    display: flex;
+    align-items: center;
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('../font/InterVariable.woff2');
+    font-weight: 100 900;
+    font-display: swap;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .profile {
+      width: 100%;
+    }
+  
+    .content {
+      padding: 0;
+    }
+  
+    body {
+      height: auto;
+    }
+  
+    .links {
+      margin-bottom: 30px;
+    }
+  }
